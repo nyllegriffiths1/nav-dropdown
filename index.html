@@ -3,37 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- Tailwind css cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
+</head>  
 <body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <!-- Container -->
+  <div class="flex flex-wrap">
+    <!-- Header/Nav -->
+    <header class="w-full">
+      <nav class="flex justify-between items-center w-full mt-1.5">
+        <!-- Logo -->
+        <img src="/nav-dropdown/images/logo.svg" alt="Logo" class="h-8 ml-8 mt-2 mx-1.5 my-1.5 px-1 py-1">
+        <!-- nav li/a items -->
+        <ul class="flex justify-center space-x-2.5">
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Features</a>
+            <!-- Dropdown content -->
+            <div class="hidden">
+              <a href="#">Todo List</a>
+              <a href="#">Calender</a>
+              <a href="#">Reminders</a>
+              <a href="#">Planning</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Company</a>
+            <!-- Dropdown content -->
+            <div class="hidden">
+              <a href="#">History</a>
+              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
+            </div>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <!-- Login/Register -->
+        <div class="flex justify-end items-center">
+          <a href="#" class="p-2">Login</a>
+          <button class="mr-5 ml-5 border-solid border rounded-lg border-black p-2">Register</button>
+        </div>
+      </nav>
+    </header>
+    <main class="flex flex-row">
+      <!-- Left hand side content -->
+      <div class="w-3/6 h-screen mr-10 flex justify-around items-center flex-col text-center">
+        <!-- Heading -->
+        <div>
+          <h1 class="text-8xl text-left font-bold ml-8 w-full">Make<br> remote work</h1>
+        </div>
+        <!-- Paragraph -->
+        <div class="text-left ml-12 pl-6">
+          <p class="text-slate-500">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        </div>
+        <!-- Learn more btn -->
+        <div class="w-full text-left">
+          <button class="border rounded-xl bg-black text-white ml-20 pt-3 pb-3 pr-6 pl-6 font-medium text-center">Learn more</button>
+        </div>
+        <!-- Footer comapny section -->
+        <div class="flex justify-between items-center flex-row">
+          <img src="/nav-dropdown/images/client-databiz.svg" alt="Databiz" class="mr-8 pr-3">
+          <img src="/nav-dropdown/images/client-audiophile.svg" alt="Audiophile" class="mr-8 pr-3">
+          <img src="/nav-dropdown/images/client-meet.svg" alt="Meet" class="mr-8 pr-3">
+          <img src="/nav-dropdown/images/client-maker.svg" alt="maker" class="mr-8 pr-3">
+        </div>
+      </div>
+      <!-- Right hand side img -->
+      <div class="w-fit h-fit mt-8 ml-5 flex justify-center items-center">
+        <img src="/nav-dropdown/images/image-hero-desktop.png" alt="" class="w-1/2 h-1/2">
+      </div>
+    </main>  
   </div>
+    
+
+
+ <script src="main.js"></script>
 </body>
 </html>
