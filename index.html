@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Tailwind css cdn -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Main CSS File -->
@@ -15,13 +17,13 @@
   <div class="flex flex-wrap">
     <!-- Header/Nav -->
     <header class="w-full">
-      <nav class="flex justify-between items-center w-full mt-1.5">
+      <nav class="flex items-center justify-between w-full mt-1.5">
         <!-- Logo -->
         <img src="/nav-dropdown/images/logo.svg" alt="Logo" class="h-8 ml-8 mt-2 mx-1.5 my-1.5 px-1 py-1">
         <!-- nav li/a items -->
-        <ul class="flex justify-center space-x-2.5">
+        <ul id="unordered-list" class="flex justify-center items-center mb-1.5 space-x-11">
           <li class="dropdown">
-            <a href="#" class="dropbtn">Features</a>
+            <a href="#" class="dropbtn">Features <i class="fa-solid fa-caret-down" style="color: #192539;"></i></a>
             <!-- Dropdown content -->
             <div class="hidden">
               <a href="#">Todo List</a>
@@ -31,7 +33,7 @@
             </div>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropbtn">Company</a>
+            <a href="#" class="dropbtn">Company <i class="fa-solid fa-caret-down" style="color: #192539;"></i></a>
             <!-- Dropdown content -->
             <div class="hidden">
               <a href="#">History</a>
@@ -45,7 +47,7 @@
         <!-- Login/Register -->
         <div class="flex justify-end items-center">
           <a href="#" class="p-2">Login</a>
-          <button class="mr-5 ml-5 border-solid border rounded-lg border-black p-2">Register</button>
+          <button class="mr-5 ml-5 border-solid border rounded-lg border-black p-3">Register</button>
         </div>
       </nav>
     </header>
@@ -54,15 +56,15 @@
       <div class="w-3/6 h-screen mr-10 flex justify-around items-center flex-col text-center">
         <!-- Heading -->
         <div>
-          <h1 class="text-8xl text-left font-bold ml-8 w-full">Make<br> remote work</h1>
+          <h1 class="text-7xl text-left font-bold ml-20 w-full">Make<br> remote work</h1>
         </div>
         <!-- Paragraph -->
-        <div class="text-left ml-12 pl-6">
-          <p class="text-slate-500">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <div class="text-left pl-1">
+          <p class="text-slate-500 text-lg">Get your team in sync, no matter your location. <br>Streamline processes, create team rituals, and <br>watch productivity soar.</p>
         </div>
         <!-- Learn more btn -->
         <div class="w-full text-left">
-          <button class="border rounded-xl bg-black text-white ml-20 pt-3 pb-3 pr-6 pl-6 font-medium text-center">Learn more</button>
+          <button class="border rounded-xl bg-black text-white ml-40 pt-3 pb-3 pr-6 pl-6 font-medium text-center">Learn more</button>
         </div>
         <!-- Footer comapny section -->
         <div class="flex justify-between items-center flex-row">
