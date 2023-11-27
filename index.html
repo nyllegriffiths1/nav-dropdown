@@ -23,31 +23,31 @@
         <!-- nav li/a items -->
         <ul id="unordered-list" class="flex justify-center items-center mb-1.5 space-x-11">
           <li class="dropdown">
-            <a href="#" class="dropbtn">Features <i class="fa-solid fa-caret-down" style="color: #192539;"></i></a>
+            <a href="#">Features<i class="fa-solid fa-caret-down mt-1 ml-1" style="color: #192539;"></i></a>
             <!-- Dropdown content -->
-            <div class="hidden">
-              <a href="#">Todo List</a>
-              <a href="#">Calender</a>
-              <a href="#">Reminders</a>
-              <a href="#">Planning</a>
-            </div>
+            <ul class="hidden absolute bg-neutral-50 shadow-xl rounded-lg m-1 p-3 hover:z-50">
+              <li><a class="p-3" href="#"><img class="w-3 h-5 mt-1" src="/nav-dropdown/images/icon-todo.svg" alt="todo icon"> Todo List</a></li>
+              <li><a class="p-3" href="#"><img class="w-3 h-5 mt-1" src="/nav-dropdown/images/icon-calendar.svg" alt="calender icon"> Calender</a></li>
+              <li><a class="p-3" href="#"><img class="w-3 h-5 mt-1" src="/nav-dropdown/images/icon-reminders.svg" alt="reminders icon"> Reminders</a></li>
+              <li><a class="p-3" href="#"><img class="w-3 h-5 mt-1" src="/nav-dropdown/images/icon-planning.svg" alt="planning icon"> Planning</a></li>
+            </ul>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropbtn">Company <i class="fa-solid fa-caret-down" style="color: #192539;"></i></a>
+            <a href="#">Company<i class="fa-solid fa-caret-down mt-1 ml-1" style="color: #192539;"></i></a>
             <!-- Dropdown content -->
-            <div class="hidden">
-              <a href="#">History</a>
-              <a href="#">Our Team</a>
-              <a href="#">Blog</a>
-            </div>
+            <ul class="hidden absolute bg-neutral-50 shadow-2xl rounded lg p-1">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
           </li>
           <li><a href="#">Careers</a></li>
           <li><a href="#">About</a></li>
         </ul>
         <!-- Login/Register -->
         <div class="flex justify-end items-center">
-          <a href="#" class="p-2">Login</a>
-          <button class="mr-5 ml-5 border-solid border rounded-lg border-black p-3">Register</button>
+          <a href="#" class="p-2 hover:bg-neutral-100">Login</a>
+          <button class="mr-5 ml-5 border-solid border rounded-lg border-black p-3 hover:bg-neutral-100">Register</button>
         </div>
       </nav>
     </header>
@@ -64,7 +64,7 @@
         </div>
         <!-- Learn more btn -->
         <div class="w-full text-left">
-          <button class="border rounded-xl bg-black text-white ml-40 pt-3 pb-3 pr-6 pl-6 font-medium text-center">Learn more</button>
+          <button class="border rounded-xl bg-black text-white ml-40 pt-3 pb-3 pr-6 pl-6 font-medium text-center hover:bg-white 500 hover:text-black">Learn more</button>
         </div>
         <!-- Footer comapny section -->
         <div class="flex justify-between items-center flex-row">
